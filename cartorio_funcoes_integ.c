@@ -140,6 +140,7 @@ int main() // início da função principal
 		printf("\t1 - Registrar Nomes\n"); // imprime informação, pula 1 linha
 		printf("\t2 - Consultar Nomes\n"); // imprime informação, pula 1 linha
 		printf("\t3 - Deletar Nomes\n\n"); // imprime informação, pula 2 linhas
+		printf("\t4 - Sair do Sistema\n\n");
 		printf("Opçao:  "); //fim do menu
 	
 		scanf("%xd" , &opcao);  //armazenamento a escolha do usuario 
@@ -162,6 +163,11 @@ int main() // início da função principal
 				deletar(); // executa a função "deletar"
 				system("pause"); // pausa
 				break; // interrompe o comando de repetição
+				
+			case 4:
+			printf("Obrigado por utilizar o sistema!!!\n");
+			return 0;
+			break;
 				
 			default: // se os valores digitados por diferentes, dos definidos em "case".
 				printf("Essa opção não está disponível!\n"); // imprime a informação, pula uma linha
